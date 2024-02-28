@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  background-color: #dcd5d5; /* Set the background color of the body */
+}
+header {
+  background-color: green; /* Set the background color of the header */
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Comic Sans Ms";
+}
+nav {
+  overflow: hidden; /* Hide the overflow content of the nav element */
+  background-color: #333;
+}
+nav a {
+  float: left;
+  color: #fff;
+  padding: 14px 12px 11px 10px; /*top right bottom left*/
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: black;
+  color: white;
+}
+
+/*line 30-class ko name (.column)*/
+.column {
+  float: left;
+  padding: 10px;
+}
+.column.side {
+  width: 20%;
+}
+.column.middle {
+  width: 50%;
+}
+
+@media screen and (max-width: 617.6px) {
+  .column.side,
+  .column.middle {
+    width: 100%;
+  }
+}
+
+footer {
+  clear: both; /*if overlap vayera aayo vane content tala aauxa*/
+  background-color: green; /* Set the background color of the header */
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Comic Sans Ms";
+}
+p {
+  text-align: justify; /*paragraph vitra ko text laicorrect form am milaidinxa*/
+}
+div.gallery {
+  margin: 5px;
+  border: 5px solid black;
+  float: left;
+  width: 200px;
+}
+div.gallery:hover {
+  border: 5px solid red;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  cursor: pointer;
+  border: none;
+  margin: 2px;
+}
