@@ -1,22 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 body {
+  font-family: "Inter";
   margin: 0;
   background-color: #dcd5d5; /* Set the background color of the body */
 }
 header {
-  background-color: green; /* Set the background color of the header */
+  background-color: #333; /* Set the background color of the header */
   padding: 20px;
-  text-align: center;
   color: white;
   font-family: "Comic Sans Ms";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 nav {
   overflow: hidden; /* Hide the overflow content of the nav element */
-  background-color: #333;
+  background-color: #272626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 nav a {
-  float: left;
   color: #fff;
-  padding: 14px 12px 11px 10px; /*top right bottom left*/
+  padding: 14px 90px 11px 90px; /*top right bottom left*/
   text-decoration: none;
 }
 nav a:hover {
@@ -24,23 +31,27 @@ nav a:hover {
   color: white;
 }
 
-/*line 30-class ko name (.column)*/
+/*line 19-class ko name (.column)*/
 .column {
   float: left;
   padding: 10px;
 }
 .column.side {
-  width: 20%;
+  gap: 7px;
+  display: flex;
 }
-.column.middle {
+.image-container,
+.content-container {
   width: 50%;
 }
-
-@media screen and (max-width: 617.6px) {
-  .column.side,
-  .column.middle {
-    width: 100%;
-  }
+.image-container img {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 100px;
+}
+.column.side p {
+  width: 100%; /* Adjust the width of paragraphs within the side column */
 }
 
 footer {
