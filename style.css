@@ -63,7 +63,7 @@ footer {
   font-family: "Comic Sans Ms";
 }
 p {
-  text-align: justify; /*paragraph vitra ko text laicorrect form am milaidinxa*/
+  text-align: justify; /*paragraph vitra ko text lai correct form am milaidinxa*/
 }
 div.gallery {
   margin: 5px;
@@ -99,4 +99,10 @@ input[type="submit"] {
   cursor: pointer;
   border: none;
   margin: 2px;
+}
+#paragraph {
+  text-decoration: underline double;
+}
+#change {
+  font-family: "Comic Sans Ms";
 }
