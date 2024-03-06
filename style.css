@@ -61,6 +61,10 @@ footer {
   text-align: center;
   color: white;
   font-family: "Comic Sans Ms";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
 p {
   text-align: justify; /*paragraph vitra ko text lai correct form am milaidinxa*/
